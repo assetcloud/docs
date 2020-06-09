@@ -1,7 +1,7 @@
 # assetdocs
 
 #### 介绍
-{资产云2.0开发文档。企业项目请看 [https://gitee.com/assetcloud-hdu/assetstore](https://gitee.com/assetcloud-hdu/assetstore)}
+资产云2.0开发文档。企业项目请看 [https://gitee.com/assetcloud-hdu/assetstore](https://gitee.com/assetcloud-hdu/assetstore)
 
 #### 软件架构
 软件架构说明
