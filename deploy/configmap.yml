@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: appstore-docs-nginx-extra-configs
+  namespace: $TARGET_PROJ
+data:
+  default.conf: |-
+    server {
+      listen       80;
+      server_name  web;
+      root         /usr/share/nginx/html;
+
+      location / {
+
+      }
+      location ^*/*/client/* { 
+        return 404; 
+        } 
+    }
