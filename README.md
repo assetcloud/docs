@@ -1,28 +1,18 @@
-# assetdocs
+---
+home: true
 
-#### 介绍
-资产云2.0开发文档。企业项目请看 [https://gitee.com/assetcloud-hdu/assetstore](https://gitee.com/assetcloud-hdu/assetstore)
+heroText: Code for China！
+tagline: 开放 协同 创新     共建 共享 共赢
+actionText: 快速上手 →
+actionLink: /Ues/
+features:
+- title: 高效规范
+  details: 平台提供各类公共组件、开放API接口、数据服务和消息服务，大幅降低政府和大规模组织应用开发门槛，提高政务应用全生命周期的效率。
 
-#### 软件架构
-软件架构说明
+- title: 连接赋能
+  details: 丰富的业务场景，专业管理经验，行业领先实践，跨界聚合资源，连接赋能创新，推进政府、公共组织、国有企业等各领域创新力量迸发。
+- title: 开放生态
+  details: 充分利用开源社区的创意和实践，提供多云、多平台的支持，无缝对接各类底层资源。开放协作，破除壁垒，避免锁定，形成健康繁荣生态。
 
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
+footer: 资产云开放协同创新中心版权所有
+---
