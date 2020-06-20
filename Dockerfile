@@ -1,3 +1,3 @@
 FROM busybox:1.31.1
 
-COPY dist/ /html
+COPY docs/.vuepress/dist/ /html
