@@ -1,0 +1,69 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: appstore-docs
+  labels:
+    app.kubernetes.io/name: nginx
+    app.kubernetes.io/instance: appstore-docs
+  namespace: $TARGET_PROJ
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: nginx
+      app.kubernetes.io/instance: appstore-docs
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: nginx
+        app.kubernetes.io/instance: appstore-docs
+    spec:
+      volumes:
+      - name: html
+        emptyDir: {}
+      - configMap:
+          name: appstore-docs-nginx-extra-configs
+        name: extra-configs
+
+      initContainers:
+      - name: copy-html
+        image: $DOCKER_REGISTRY/$DOCKER_REPO/appstore-docs:0.1.$BUILD_NUMBER
+        imagePullPolicy: IfNotPresent
+        command:
+        - sh
+        - -c
+        - cp -r /html/* /nginx-html
+        volumeMounts:
+        - name: html
+          mountPath: /nginx-html
+        resources:
+          requests:
+            memory: 10Mi
+            cpu: 10m
+
+      containers:
+        - name: web
+          image: nginx:1.16-alpine
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            failureThreshold: 10
+          volumeMounts:
+          - name: extra-configs
+            mountPath: /etc/nginx/conf.d
+          - name: html
+            mountPath: /usr/share/nginx/html
