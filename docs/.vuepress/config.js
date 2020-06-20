@@ -1,6 +1,6 @@
 module.exports = {
-    title: '资产云文档',
-    description: 'a doc',
+    title: '云原生应用开发文档',
+    description: '本文档提供资产云应用中心上架应用相关技术文档',
 
     themeConfig: {
         nav: [
