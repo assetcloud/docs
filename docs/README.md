@@ -22,6 +22,6 @@ footer: 资产云开放协同创新中心版权所有
 
 ::: details 点击查看代码
 ```js
-console.log('你好，VuePress！')
+console.log('你好，AssetCloud！')
 ```
 :::
