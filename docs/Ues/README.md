@@ -6,25 +6,25 @@
 
 1. 进入开发者中心
 
-   ![image-20200602164600053](./image/image-20200602164600053.png)
+   <img :src="$withBase('/image/image-20200602164600053.png')">
 
-   ![image-20200602164657457](./image/image-20200602164657457.png)
+   <img :src="$withBase('/image/image-20200602164657457.png')">
 
 2) 注册应用
 
-   ![image-20200602132910552](./image/image-20200602132910552.png)
+   <img :src="$withBase('/image/image-20200602132910552.png')">
 
 3) 填写应用相关信息
 
-   ![image-20200602133356250](./image/image-20200602133356250.png)
+   <img :src="$withBase('/image/image-20200602133356250.png')">
 
 4) 等待平台审核应用
 
-   ![image-20200602133410337](./image/image-20200602133410337.png)
+   <img :src="$withBase('/image/image-20200602133410337.png')">
 
 5) 注册通过
 
-   ![image-20200602133502258](./image/image-20200602133502258.png)
+   <img :src="$withBase('/image/image-20200602133502258.png')">
 
 
 
@@ -34,9 +34,9 @@
 
 ### 查看 KEY 和 SECRET
 
-![image-20200602134346378](./image/image-20200602134346378.png)
+<img :src="$withBase('/image/image-20200602134346378.png')">
 
-![image-20200602134426162](./image/image-20200602134426162.png)
+<img :src="$withBase('/image/image-20200602134426162.png')">
 
 ### 前端 SDK 使用
 
@@ -237,7 +237,7 @@ HttpRequestUtil.send(request);
 
 例如：`key:2b3dd4af198c4f49935de8cadf049fc9D3hw8EcAyOA211Ib47`
 
-![image-20200602154734300](./image/image-20200602154734300.png)
+<img :src="$withBase('/image/image-20200602154734300.png')">
 
 #### 请求参数类型
 
@@ -283,5 +283,4 @@ request(
 
 Postman 请求示例：
 
-![image-20200602161822800](./image/image-20200602161822800.png)
-
+<img :src="$withBase('/image/image-20200602161822800.png')">
