@@ -3,7 +3,14 @@ module.exports = {
     description: '本文档提供资产云应用中心上架应用相关技术说明',
 
     themeConfig: {
-        logo: './ocia.png',
+        logo: '/ocia.png',
+        lastUpdated: 'Last Updated',
+        repo: 'https://github.com/assetcloud/docs.git',
+        docsRepo: 'assetcloud/docs',
+        docsDir: 'docs',
+        docsBranch: 'master',
+        editLinks: true,
+        editLinkText: '在GitHub上编辑此页！',
         nav: [
             { text: '首页', link: '/' },
             { text: '快速上手', link: '/Ues/' },
@@ -18,6 +25,6 @@ module.exports = {
             "/Tools and resources/": ["", "one", "two"],
         }
 
-        
+
     }
 }
