@@ -13,7 +13,7 @@ module.exports = {
         editLinkText: '在GitHub上编辑此页！',
         nav: [
             { text: '首页', link: '/' },
-            { text: '快速上手', link: '/Ues/' },
+            { text: '快速入门', link: '/Ues/' },
             { text: '开发指南', link: '/guide/' },
             { text: 'API说明', link: '/API explain/' },
             { text: '工具与资源', link: '/Tools and resources/' },
