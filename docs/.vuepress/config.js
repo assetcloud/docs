@@ -14,7 +14,7 @@ module.exports = {
         sidebar: {
             "/Ues/": ["", "one", "two", "three", "four", "five"],
             "/guide/": ["", "one", "two", "three"],
-            "/API explain/": ["", "one", "two"],
+            "/API explain/": ["", "one", "two","unicode"],
             "/Tools and resources/": ["", "one", "two"],
         }
 
