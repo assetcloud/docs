@@ -14,8 +14,8 @@ module.exports = {
         nav: [
             { text: '首页', link: '/' },
             { text: '快速入门', link: '/Ues/' },
-            { text: '开发指南', link: '/guide/' },
-            { text: 'API说明', link: '/API explain/' },
+            { text: '设计规范', link: '/guide/' },
+            { text: '开发指南', link: '/API explain/' },
             { text: '工具与资源', link: '/Tools and resources/' },
         ],
         sidebar: {
