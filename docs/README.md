@@ -3,7 +3,7 @@ home: true
 
 heroText: Code for China！
 tagline: 开放 协同 创新     共建 共享 共赢
-actionText: 快速上手 →
+actionText: 快速入门 →
 actionLink: /Ues/
 features:
 - title: 高效规范
