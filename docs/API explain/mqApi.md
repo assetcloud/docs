@@ -9,7 +9,7 @@
 
 maven方式，在pom文件中添加如下配置：
 
-```javascript 
+```javascript
 <dependency>
    <groupId>cn.com.zstars</groupId>
    <artifactId>cloud-message-spring-boot-starter</artifactId>
@@ -40,7 +40,7 @@ maven方式，在pom文件中添加如下配置：
 | getTags        | 用户区分具体消息类型         |
 | getMessageBody | 具体消息所发送的内容         |
 
-*** 
+***
 
 消息tags类型表述：
 
