@@ -173,7 +173,7 @@ post+json
 ```
 {
  "token":"xxxxxxx",
- "gs1ode":"xxxxxxxxxxxx"
+ "gs1Code":"xxxxxxxxxxxx"
  
 }
 
