@@ -6,7 +6,7 @@
 ## 引入消息SDK依赖包
 
 maven方式，在pom文件中添加如下配置：
-``` javascript
+``` 
 <dependency>
    <groupId>cn.com.zstars</groupId>
    <artifactId>cloud-message-spring-boot-starter</artifactId>
@@ -18,16 +18,16 @@ maven方式，在pom文件中添加如下配置：
 
 前提：已购买应用并获得应用key
 
-1.    实现CloudMessageListener<CloudMessage>接口；
+* 实现CloudMessageListener<CloudMessage>接口；
 
-2.    实现类上添加注解@EnableCloudMessageListener；
-3.    设置注解参数中的topic和consumerGroup，格式如下：
+* 实现类上添加注解@EnableCloudMessageListener；
+* 设置注解参数中的topic和consumerGroup，格式如下：
 
 > topic：“topic_zstar-”+ 应用key
 
 > consumerGroup：“group_”+ 应用key
 
-4.    在实现类的onMessage方法中处理具体消息消费逻辑；
+* 在实现类的onMessage方法中处理具体消息消费逻辑；
 
 > 方法onMessage中参数CloudMessage描述：
 
@@ -66,7 +66,7 @@ tag_app_distribute消息内容描述：
 
 ## 示例代码
 
-```java
+```
 package com.zstars.zams.jianguan.consumer;
 
 import com.assetcloud.message.center.annotation.EnableCloudMessageListener;
