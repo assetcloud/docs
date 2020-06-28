@@ -1,9 +1,8 @@
 ## 消息SDK
-
-## 准备
+### 准备
 
 登录云原生应用管理平台。注册用户，创建单位，购买应用。
-## 引入消息SDK依赖包
+### 引入消息SDK依赖包
 
 maven方式，在pom文件中添加如下配置：
 ``` 
@@ -14,7 +13,7 @@ maven方式，在pom文件中添加如下配置：
 </dependency>
 ```
 
-## 使用步骤
+### 使用步骤
 
 前提：已购买应用并获得应用key
 
@@ -64,7 +63,7 @@ tag_app_distribute消息内容描述：
 | appIds    | 购买的应用ID字符串                 |
 | tenantIds | 租户code字符串，多个值用“，”号分割 |
 
-## 示例代码
+### 示例代码
 
 ```
 package com.zstars.zams.jianguan.consumer;
