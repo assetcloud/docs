@@ -1,11 +1,15 @@
-## 消息SDK
-### 准备
+
+# 消息SDK
+
+## 准备
 
 登录云原生应用管理平台。注册用户，创建单位，购买应用。
-### 引入消息SDK依赖包
+
+## 引入消息SDK依赖包
 
 maven方式，在pom文件中添加如下配置：
-``` 
+
+```javascript 
 <dependency>
    <groupId>cn.com.zstars</groupId>
    <artifactId>cloud-message-spring-boot-starter</artifactId>
@@ -13,17 +17,17 @@ maven方式，在pom文件中添加如下配置：
 </dependency>
 ```
 
-### 使用步骤
+## 使用步骤
 
 前提：已购买应用并获得应用key
 
-* 实现CloudMessageListener<CloudMessage>接口；
+* 实现CloudMessageListener接口；
 
 * 实现类上添加注解@EnableCloudMessageListener；
 * 设置注解参数中的topic和consumerGroup，格式如下：
 
 > topic：“topic_zstar-”+ 应用key
-
+>
 > consumerGroup：“group_”+ 应用key
 
 * 在实现类的onMessage方法中处理具体消息消费逻辑；
@@ -63,9 +67,9 @@ tag_app_distribute消息内容描述：
 | appIds    | 购买的应用ID字符串                 |
 | tenantIds | 租户code字符串，多个值用“，”号分割 |
 
-### 示例代码
+## 示例代码
 
-```
+```java
 package com.zstars.zams.jianguan.consumer;
 
 import com.assetcloud.message.center.annotation.EnableCloudMessageListener;
