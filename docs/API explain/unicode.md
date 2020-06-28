@@ -18,7 +18,7 @@ post+json
 
 |参数名    |类型     |说明               |是否必填  |
 |-----    |-----    |-------            |------   |
-|token    |String   |令牌 联系叶伟荣获取  |是       |
+|token    |String   |令牌 联系平台获取  |是       |
 |barCode|String|条形码 有校验规则|是|
 |vendorCode|String|厂商唯一识别码|否|
 |unifiedSocialCreditCode|String|组织机构代码 对应orgCode|是|
