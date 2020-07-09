@@ -1,8 +1,14 @@
-## 消息SDK
-## 一、	准备
+
+# 消息SDK
+
+## 准备
+
 登录云原生应用管理平台。注册用户，创建单位，购买应用。
-## 二、	引入消息SDK依赖包
+
+## 引入消息SDK依赖包
+
 maven方式，在pom文件中添加如下配置：
+
 ```javascript
 <dependency>
    <groupId>cn.com.zstars</groupId>
@@ -11,22 +17,22 @@ maven方式，在pom文件中添加如下配置：
 </dependency>
 ```
 
-## 三、	使用步骤
+## 使用步骤
+
 前提：已购买应用并获得应用key
 
-\1.    实现CloudMessageListener<CloudMessage>接口；
+* 实现CloudMessageListener接口；
 
-\2.    实现类上添加注解@EnableCloudMessageListener；
+* 实现类上添加注解@EnableCloudMessageListener；
+* 设置注解参数中的topic和consumerGroup，格式如下：
 
-\3.    设置注解参数中的topic和consumerGroup，格式如下：
+> topic：“topic_zstar-”+ 应用key
+>
+> consumerGroup：“group_”+ 应用key
 
-topic：“topic_zstar-”+ 应用key
+* 在实现类的onMessage方法中处理具体消息消费逻辑；
 
-consumerGroup：“group_”+ 应用key
-
-\4.    在实现类的onMessage方法中处理具体消息消费逻辑；
-
-方法onMessage中参数CloudMessage描述：
+> 方法onMessage中参数CloudMessage描述：
 
 | 属性名称       | 属性描述                     |
 | -------------- | ---------------------------- |
@@ -34,7 +40,7 @@ consumerGroup：“group_”+ 应用key
 | getTags        | 用户区分具体消息类型         |
 | getMessageBody | 具体消息所发送的内容         |
 
- 
+***
 
 消息tags类型表述：
 
@@ -43,7 +49,7 @@ consumerGroup：“group_”+ 应用key
 | tag_app_add        | 购买应用时发送的消息     |
 | tag_app_distribute | 集团分发应用时发送的消息 |
 
- 
+ ***
 
 tag_app_add消息内容描述：
 
@@ -52,7 +58,7 @@ tag_app_add消息内容描述：
 | appId    | 购买的应用ID |
 | tenantId | 租户code     |
 
- 
+***
 
 tag_app_distribute消息内容描述：
 
@@ -60,7 +66,8 @@ tag_app_distribute消息内容描述：
 | --------- | ---------------------------------- |
 | appIds    | 购买的应用ID字符串                 |
 | tenantIds | 租户code字符串，多个值用“，”号分割 |
-## 四、	示例代码
+
+## 示例代码
 
 ```java
 package com.zstars.zams.jianguan.consumer;
@@ -148,4 +155,3 @@ public class BaseConsumerListener implements CloudMessageListener<CloudMessage> 
 
 }
 ```
-

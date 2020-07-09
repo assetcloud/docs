@@ -19,9 +19,9 @@ module.exports = {
             { text: '工具与资源', link: '/Tools and resources/' },
         ],
         sidebar: {
-            "/Ues/": ["", "one", "two", "three", "four", "five","FAQ"],
+            "/Ues/": ["", "one", "two", "three", "four", "five", "FAQ"],
             "/guide/": ["", "one", "two", "three"],
-            "/API explain/": ["", "one", "two","unicode"],
+            "/API explain/": ["", "one", "two", "unicode", "mqApi"],
             "/Tools and resources/": ["", "one", "two"],
         }
 
