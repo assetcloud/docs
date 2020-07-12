@@ -6,7 +6,7 @@ tagline: 开放 协同 创新     共建 共享 共赢
 actionText: 快速入门 →
 actionLink: /Ues/
 features:
-- title: 高效规范
+- title: 规范高效
   details: 平台提供各类公共组件、开放API接口、数据服务和消息服务，大幅降低政府和大规模组织应用开发门槛，提高政务应用全生命周期的效率。
 
 - title: 连接赋能
